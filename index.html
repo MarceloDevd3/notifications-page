@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./more/bootstrap.css/bootstrap.css">
+  <script src="./more/bootstrap.js/bootstrap.bundle.js"></script>
+
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+<body>
+    <main>
+        <section class="container my-md-5 py-3 rounded-3">
+           <div class="row justify-content-between py-1 mx-1 mx-md-0">
+                <div class="col-auto col-item-1 col-md-6"><h1 class="space"> Notifications <span class="badge bg-primary visible-item">3</span> </h1></div>
+                <div class="col-auto col-item-2 col-md-6"><a class="float-end text-decoration-none gray space" href="#" onclick="cleanAll()">Mark all as read</a></div>
+           </div>
+           <div class="row mx-2 mx-md-1">
+              <div class="alert alert-color d-flex visible-item" role="alert">
+                 <div class="box-img d-block">
+                  <img src="assets/images/avatar-mark-webber.webp" alt="mark" class="img-fluid">
+                 </div>
+                 <div class="col text-start mx-3">
+                   <p class="responsive-p responsive-p-fix "> <strong>Mark Webber</strong> reacted to your recent post <a href="# " class="gray text-decoration-none"> My first tournament today! </a> <span class="position-absolute bubble-center  translate-middle p-1 bg-danger border border-light rounded-circle bubble-0 visible-item">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                    <br> <span class="gray">1m ago</span>
+                  </p>
+                  <p></p>
+                 </div>
+              </div>
+              <div class="alert alert-color d-flex visible-item" role="alert">
+                <div class="box-img d-block">
+                 <img src="assets/images/avatar-angela-gray.webp" alt="angela" class="img-fluid">
+                </div>
+                <div class="col text-start mx-3">
+                  <p class="responsive-p"> <strong>Angela Gray</strong> <a href="# " class="gray text-decoration-none"> followed you</a> <span class="position-absolute bubble-center  translate-middle p-1 bg-danger border border-light rounded-circle bubble-1 visible-item">
+                   <span class="visually-hidden">New alerts</span>
+                 </span>
+                   <br> <span class="gray">5m ago</span>
+                 </p>
+                 <p></p>
+                </div>
+             </div>
+             <div class="alert alert-color d-flex visible-item" role="alert">
+                 <div class="box-img d-block">
+                  <img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob" class="img-fluid">
+                 </div>
+                 <div class="col text-start mx-3">
+                   <p class="responsive-p"> <strong>Jacob Thompson</strong> has joined your group 
+                    <a href="# " class="gray text-decoration-none"> Chess Club </a> <span class="position-absolute bubble-center  translate-middle p-1 bg-danger border border-light rounded-circle bubble-2 visible-item">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+
+                   
+                    <br> <span class="gray">1 day ago</span>
+                  </p>
+                  <p></p>
+                 </div>
+              </div>
+          <!--novos elementos-->
+              <div class="alert alert-mgs alert-color-white d-flex" role="alert">
+                <div class="box-img d-block">
+                 <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="rizky" class="img-fluid">
+                </div>
+                <div class="col text-start mx-3">
+                  <p class="responsive-p responsive-p-fix "> <strong>Rizky Hasanuddin</strong> sent you a private message  
+                   <br> <span class="gray">5 days ago</span>
+                 </p>
+             
+                   <div class="box-msg fix-more">
+                    <p class="responsive-p-fix-1" >Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                      I'm already having lots of fun and improving my game.</p>
+                 </div>
+                
+                 
+                </div>
+             </div>
+
+             <div class="alert alert-color-white d-flex" role="alert">
+                <div class="box-img d-block">
+                 <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly" class="img-fluid">
+                </div>
+                <div class="col fix text-start mx-3">
+                  <p class="responsive-p"> <strong> Kimberly Smith</strong> commented on your picture 
+                   <br> <span class="gray">1 week ago</span>
+                 </p>
+          
+                </div>
+                <div class="box-img d-block left">
+                  <img src="assets/images/image-chess.webp" alt="angela" class="img-fluid">
+                 </div>
+             </div>
+
+
+             <div class="alert alert-space-pb alert-color-white d-flex" role="alert">
+                <div class="box-img d-block">
+                 <img src="assets/images/avatar-nathan-peterson.webp" alt="nathan" class="img-fluid">
+                </div>
+                <div class="col text-start mx-3">
+                  <p class="responsive-p-fix  fix-more"> <strong>Nathan Peterson</strong>  reacted to your recent post 5 end-game strategies to increase your win rate
+                   <br> <span class="gray">2 weeks ago
+                  </span>
+                 </p>
+                 <p></p>
+                </div>
+             </div>
+
+
+             <div class="alert alert-color-white d-flex" role="alert">
+                <div class="box-img d-block">
+                 <img src="assets/images/avatar-anna-kim.webp" alt="ana" class="img-fluid">
+                </div>
+                <div class="col text-start mx-3">
+                  <p class="responsive-p-fix fix-more"> <strong>Anna Kim </strong> left the group Chess Club
+                  
+                   <br> <span class="gray">5m ago</span>
+                 </p>
+                 <p></p>
+                </div>
+             </div>
+           </div>
+        </section>
+    </main>
+  <!-- 
+  
+  2 weeks ago
+  -->
+  <script src="js/notification.js"></script>
+</body>
+
+</html>
